@@ -1,0 +1,7 @@
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\bin\Debug\WebPageParser.dll
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\bin\Debug\WebPageParser.pdb
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\bin\Debug\WebDriver.dll
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\bin\Debug\WebDriver.xml
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\obj\Debug\WebPageParser.csprojResolveAssemblyReference.cache
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\obj\Debug\WebPageParser.dll
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\obj\Debug\WebPageParser.pdb
