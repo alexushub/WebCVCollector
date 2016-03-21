@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\
+C:\_ProgrammingProjects\WebCVCollector\WebCVCollector\obj\Debug\
 WebCVCollector
 none
 false
 DEBUG;TRACE
-D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\App.xaml
+C:\_ProgrammingProjects\WebCVCollector\WebCVCollector\App.xaml
 11151548125
 
 62033723619
-75-1548293768
+75625929577
 MainWindow.xaml;
 
 False

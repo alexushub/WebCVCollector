@@ -35,9 +35,11 @@ namespace WebCVCollector
 
             var parser = ServiceLocator.Current.GetInstance<IWebPageParser>();
 
-            using (var uow = new UnitOfWork(/*CVDbContext.Create()*/))
+            var cvs = parser.GetCvs();
+
+            using (var uow = new UnitOfWork())
             {
-                uow.CVs.Add(new CV() { Name = "dsfdf" });
+                uow.CVs.AddRange(cvs);
                 uow.Complete();
             }
         }

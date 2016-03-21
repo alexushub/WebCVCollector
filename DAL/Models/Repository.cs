@@ -40,5 +40,10 @@ namespace DAL.Models
         {
             Context.Set<TEntity>().Remove(entity);
         }
+
+        void IRepository<TEntity>.AddRange(IEnumerable<TEntity> entities)
+        {
+            Context.Set<TEntity>().AddRange(entities);
+        }
     }
 }

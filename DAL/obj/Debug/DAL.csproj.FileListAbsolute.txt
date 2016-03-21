@@ -1,9 +1,8 @@
-D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Debug\DAL.dll
-D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Debug\DAL.pdb
-D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Debug\EntityFramework.dll
-D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Debug\EntityFramework.SqlServer.dll
-D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Debug\EntityFramework.xml
-D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Debug\EntityFramework.SqlServer.xml
-D:\_VSProjects\_TestTasks\WebCVCollector\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-D:\_VSProjects\_TestTasks\WebCVCollector\DAL\obj\Debug\DAL.dll
-D:\_VSProjects\_TestTasks\WebCVCollector\DAL\obj\Debug\DAL.pdb
+C:\_ProgrammingProjects\WebCVCollector\DAL\bin\Debug\DAL.dll
+C:\_ProgrammingProjects\WebCVCollector\DAL\bin\Debug\DAL.pdb
+C:\_ProgrammingProjects\WebCVCollector\DAL\bin\Debug\EntityFramework.dll
+C:\_ProgrammingProjects\WebCVCollector\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\_ProgrammingProjects\WebCVCollector\DAL\bin\Debug\EntityFramework.xml
+C:\_ProgrammingProjects\WebCVCollector\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\_ProgrammingProjects\WebCVCollector\DAL\obj\Debug\DAL.dll
+C:\_ProgrammingProjects\WebCVCollector\DAL\obj\Debug\DAL.pdb
