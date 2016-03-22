@@ -12,3 +12,17 @@ C:\_ProgrammingProjects\WebCVCollector\WebPageParser\bin\Debug\DAL.pdb
 C:\_ProgrammingProjects\WebCVCollector\WebPageParser\bin\Debug\HtmlAgilityPack.pdb
 C:\_ProgrammingProjects\WebCVCollector\WebPageParser\bin\Debug\HtmlAgilityPack.xml
 C:\_ProgrammingProjects\WebCVCollector\WebPageParser\bin\Debug\EntityFramework.xml
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\bin\Debug\WebPageParser.dll
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\bin\Debug\WebPageParser.pdb
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\bin\Debug\DAL.dll
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\bin\Debug\HtmlAgilityPack.dll
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\bin\Debug\WebDriver.dll
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\bin\Debug\EntityFramework.dll
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\bin\Debug\DAL.pdb
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\bin\Debug\HtmlAgilityPack.pdb
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\bin\Debug\HtmlAgilityPack.xml
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\bin\Debug\WebDriver.xml
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\bin\Debug\EntityFramework.xml
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\obj\Debug\WebPageParser.csprojResolveAssemblyReference.cache
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\obj\Debug\WebPageParser.dll
+D:\_VSProjects\_TestTasks\WebCVCollector\WebPageParser\obj\Debug\WebPageParser.pdb

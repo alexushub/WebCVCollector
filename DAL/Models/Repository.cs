@@ -26,7 +26,7 @@ namespace DAL.Models
             return Context.Set<TEntity>().ToList();
         }
 
-        IEnumerable<TEntity> IRepository<TEntity>.Find(Expression<Func<TEntity, bool>> predicate)
+        IEnumerable<TEntity> IRepository<TEntity>.Find(Func<TEntity, bool> predicate)
         {
             return Context.Set<TEntity>().Where(predicate).ToList();
         }

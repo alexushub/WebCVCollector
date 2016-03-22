@@ -17,7 +17,7 @@ using System.Windows.Shapes;
 using WebPageParser.Interfaces;
 using WebPageParser.Parsers;
 
-namespace WebCVCollector
+namespace WebCVCollector.Forms
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -42,6 +42,12 @@ namespace WebCVCollector
                 uow.CVs.AddRange(cvs);
                 uow.Complete();
             }
+        }
+
+        private void SearchBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var searchWind = new SearchWindow();
+            searchWind.ShowDialog();
         }
     }
 }
