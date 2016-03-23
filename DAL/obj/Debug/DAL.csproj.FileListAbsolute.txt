@@ -10,8 +10,10 @@ D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Debug\DAL.dll
 D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Debug\DAL.pdb
 D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Debug\EntityFramework.dll
 D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Debug\LinqKit.dll
 D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Debug\EntityFramework.xml
 D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Debug\LinqKit.pdb
+D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Debug\LinqKit.xml
 D:\_VSProjects\_TestTasks\WebCVCollector\DAL\obj\Debug\DAL.dll
 D:\_VSProjects\_TestTasks\WebCVCollector\DAL\obj\Debug\DAL.pdb
-D:\_VSProjects\_TestTasks\WebCVCollector\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

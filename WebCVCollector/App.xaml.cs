@@ -20,6 +20,7 @@ namespace WebCVCollector
     {
         protected override void OnStartup(StartupEventArgs e)
         {
+            AppDomain.CurrentDomain.SetData("DataDirectory", System.IO.Directory.GetCurrentDirectory());
             string url = ConfigurationManager.AppSettings["CVUrl"];// Properties.Settings.Default.CVUrl;
 
             IUnityContainer container = new UnityContainer();
@@ -28,11 +29,6 @@ namespace WebCVCollector
             ServiceLocator.SetLocatorProvider(() => new UnityServiceLocator(container));
             //MainWindow mainWindow = container.Resolve<MainWindow>();
             //mainWindow.Show();
-
-            using (var cont = new CVDbContext())
-            {
-                cont.Database.Initialize(true);
-            }
         }
     }
 }

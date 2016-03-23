@@ -1,0 +1,11 @@
+D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Release\DAL.dll
+D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Release\DAL.pdb
+D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Release\EntityFramework.dll
+D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Release\EntityFramework.SqlServer.dll
+D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Release\LinqKit.dll
+D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Release\EntityFramework.xml
+D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Release\EntityFramework.SqlServer.xml
+D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Release\LinqKit.pdb
+D:\_VSProjects\_TestTasks\WebCVCollector\DAL\bin\Release\LinqKit.xml
+D:\_VSProjects\_TestTasks\WebCVCollector\DAL\obj\Release\DAL.dll
+D:\_VSProjects\_TestTasks\WebCVCollector\DAL\obj\Release\DAL.pdb

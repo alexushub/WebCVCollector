@@ -1,4 +1,5 @@
 ﻿using DAL.Models;
+using LinqKit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,29 +39,27 @@ namespace WebCVCollector.Forms
             ageMaxTextBox.IsEnabled = false;
             ageMinTextBox.IsEnabled = false;
 
-            cvsListBox.Items.Add(new CV() {
-                BirthDate = DateTime.Now,
-                City = "CityIzhevsk",
-                Education = "Educ",
-                ExpAmount = ExpAmount.From1To3,
-                Link = "http://aaa.ru",
-                Name = "NameAlexus",
-                Position = "Programmer",
-                Salary = 100000,
-                Skills = "Can all"
-            });
+            using (var uow = new UnitOfWork())
+            {
+                var cnt = uow.CVs.Count();//.Find(preBuilder).ToList();
+                totalLabel.Content = "Total in Db: " + cnt;
+            }
+
+            
         }
 
         private void SalaryTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            long a;
+            long num;
             var sen = (TextBox)sender;
-            e.Handled = !IsTextAllowed(e.Text) || (!String.IsNullOrEmpty(sen.Text) && !long.TryParse(sen.Text, out a ));
+            e.Handled = !long.TryParse(sen.Text + e.Text, out num);
+
+            //e.Handled = !IsTextAllowed(e.Text);// || (!String.IsNullOrWhiteSpace(sen.Text) && !long.TryParse(sen.Text, out a ));
         }
 
         private bool IsTextAllowed(string text)
         {
-            Regex regex = new Regex("[^0-9.-]+");
+            Regex regex = new Regex("[^0-9]");
             return !regex.IsMatch(text);
         }
 
@@ -73,23 +72,25 @@ namespace WebCVCollector.Forms
 
             var searchStrs = SearchStringTextBox.Text.ToLower().Split(' ', ',').Where(m => !String.IsNullOrWhiteSpace(m)).ToList();
 
-            Expression<Func<CV, bool>> predicate = cv =>
-                searchStrs.Count == 0 || searchStrs.Any(m => cv.Name.ToLower().Contains(m)
-                    || cv.Position.ToLower().Contains(m)
-                    || cv.Skills.ToLower().Contains(m)
-                    || cv.City.ToLower().Contains(m)
-                    || cv.Education.ToLower().Contains(m));
-            
-            
-            var compiled = predicate.Compile();
-            //exp = i => compiled(i) && i % 2 == 0;
+            var preBuilder = PredicateBuilder.True<CV>();
 
-            
+            if (searchStrs.Count != 0)
+            {
+                foreach (var str in searchStrs)
+                {
+                    preBuilder = preBuilder.And(cv => cv.Name.ToLower().Contains(str)
+                    || cv.Position.ToLower().Contains(str)
+                    || cv.Skills.ToLower().Contains(str)
+                    || cv.City.ToLower().Contains(str)
+                    || cv.Education.ToLower().Contains(str));
+                }
+            }
+
             if (SalaryTextBox.IsEnabled && !String.IsNullOrWhiteSpace(SalaryTextBox.Text))
             {
                 long.TryParse(SalaryTextBox.Text, out salaryMax);
-                predicate = cv => compiled(cv) && cv.Salary <= salaryMax;
-                compiled = predicate.Compile();
+
+                preBuilder = preBuilder.And(cv => cv.Salary <= salaryMax);
             }
 
             if (ageMinTextBox.IsEnabled && !String.IsNullOrWhiteSpace(ageMinTextBox.Text))
@@ -97,8 +98,8 @@ namespace WebCVCollector.Forms
                 long.TryParse(ageMinTextBox.Text, out ageMin);
 
                 var date = DateTime.Now.Subtract(TimeSpan.FromDays(365 * ageMin));
-                predicate = cv => compiled(cv) && cv.BirthDate.HasValue && cv.BirthDate.Value > date;
-                compiled = predicate.Compile();
+
+                preBuilder = preBuilder.And(cv => cv.BirthDate.HasValue && cv.BirthDate.Value <= date);
             }
 
             if (ageMaxTextBox.IsEnabled && !String.IsNullOrWhiteSpace(ageMaxTextBox.Text))
@@ -106,24 +107,27 @@ namespace WebCVCollector.Forms
                 long.TryParse(ageMaxTextBox.Text, out ageMax);
 
                 var date = DateTime.Now.Subtract(TimeSpan.FromDays(365 * ageMax));
-                predicate = cv => compiled(cv) && cv.BirthDate.HasValue && cv.BirthDate.Value < date;
-                compiled = predicate.Compile();
+
+                preBuilder = preBuilder.And(cv => cv.BirthDate.HasValue && cv.BirthDate.Value >= date);
             }
 
             var sel = int.Parse(((ComboBoxItem)expComboBox.SelectedItem).Tag.ToString());
             if (sel > -1)
             {
                 exp = (ExpAmount)sel;
-                predicate = cv => compiled(cv) && cv.ExpAmount == exp;
-                compiled = predicate.Compile();
+
+                preBuilder = preBuilder.And(cv => cv.ExpAmount == exp);
             }
 
             var cvs = new List<CV>();
             using (var uow = new UnitOfWork())
             {
-                cvs = uow.CVs.Find(compiled).ToList();
+                cvs = uow.CVs.Find(preBuilder).ToList();
             }
 
+            resultLabel.Content = "Result: " + cvs.Count;
+
+            cvsListBox.Items.Clear();
             cvs.ForEach(a => cvsListBox.Items.Add(a));
         }
 

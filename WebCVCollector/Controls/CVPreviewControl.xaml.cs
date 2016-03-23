@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAL.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,21 @@ namespace WebCVCollector.Controls
         public CVPreviewControl()
         {
             InitializeComponent();
+            
+        }
+
+        private void UserControl_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            var send = (CVPreviewControl)sender;
+            var cv = (CV)send.DataContext;
+
+            System.Diagnostics.Process.Start(cv.Link);
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            var cv = (CV)this.DataContext;
+            expLabel.Content = DALConstants.expAmountDisplay[(int)cv.ExpAmount];
         }
     }
 }

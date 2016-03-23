@@ -5,10 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WebCVCollector.Forms"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="CV Collector" Height="222" Width="540" ResizeMode="NoResize" Loaded="Window_Loaded">
     <Grid>
-        <Button x:Name="CollectBtn" Content="Collect" HorizontalAlignment="Left" Height="55" Margin="93,52,0,0" VerticalAlignment="Top" Width="76" Click="CollectBtn_Click"/>
-        <Button x:Name="SearchBtn" Content="Search" HorizontalAlignment="Left" Margin="188,52,0,0" VerticalAlignment="Top" Width="76" Height="55" Click="SearchBtn_Click"/>
+        <Button x:Name="CollectBtn" Content="Collect CVs" HorizontalAlignment="Left" Height="55" Margin="10,10,0,0" VerticalAlignment="Top" Width="200" Click="CollectBtn_Click"/>
+        <Button x:Name="SearchBtn" Content="Search" HorizontalAlignment="Left" Margin="317,10,0,0" VerticalAlignment="Top" Width="200" Height="55" Click="SearchBtn_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="114" Margin="10,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"><Run Text="Collect CVs from E1 site and store it in local DB."/><LineBreak/><Run Text="Uses Selenium and Chrome browser to opening and parsing pages."/></TextBlock>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="114" Margin="317,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"><Run Text="Search for CVs in local DB."/><LineBreak/><Run Text="Uses SQL server."/></TextBlock>
+        <Label x:Name="initLabel" Content="Db initialization. Please wait..." HorizontalAlignment="Left" Height="194" VerticalAlignment="Top" Width="534" Background="White"/>
 
     </Grid>
 </Window>

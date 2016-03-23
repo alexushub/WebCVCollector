@@ -1,14 +1,10 @@
-D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\WebCVCollector.csprojResolveAssemblyReference.cache
-D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\Forms\MainWindow.g.cs
-D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\App.g.cs
-D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\WebCVCollector_MarkupCompile.cache
-D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\WebCVCollector_MarkupCompile.lref
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\WebCVCollector.exe.config
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\WebCVCollector.exe
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\WebCVCollector.pdb
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\DAL.dll
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\EntityFramework.dll
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\EntityFramework.SqlServer.dll
+D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\LinqKit.dll
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\Microsoft.Practices.Unity.dll
@@ -20,6 +16,8 @@ D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\DAL.pdb
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\WebPageParser.pdb
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\EntityFramework.xml
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\EntityFramework.SqlServer.xml
+D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\LinqKit.pdb
+D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\LinqKit.xml
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\Microsoft.Practices.Unity.xml
@@ -27,7 +25,15 @@ D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\Microsoft.Prac
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\Newtonsoft.Json.xml
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\bin\Debug\WebDriver.xml
+D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\WebCVCollector.csprojResolveAssemblyReference.cache
+D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\Controls\CVPreviewControl.g.cs
+D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\Forms\MainWindow.g.cs
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\Forms\SearchWindow.g.cs
+D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\App.g.cs
+D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\WebCVCollector_MarkupCompile.cache
+D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\WebCVCollector_MarkupCompile.lref
+D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\Controls\CVPreviewControl.baml
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\Forms\MainWindow.baml
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\Forms\SearchWindow.baml
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\WebCVCollector.g.resources
@@ -35,6 +41,3 @@ D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\WebCVCollector
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\WebCVCollector.csproj.GenerateResource.Cache
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\WebCVCollector.exe
 D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\WebCVCollector.pdb
-D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\GeneratedInternalTypeHelper.g.cs
-D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\Controls\CVPreviewControl.g.cs
-D:\_VSProjects\_TestTasks\WebCVCollector\WebCVCollector\obj\Debug\Controls\CVPreviewControl.baml

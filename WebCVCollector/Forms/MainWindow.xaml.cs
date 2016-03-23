@@ -32,6 +32,7 @@ namespace WebCVCollector.Forms
         private void CollectBtn_Click(object sender, RoutedEventArgs e)
         {
             //string url = Properties.Settings.Default.CVUrl;
+            MessageBox.Show("CV collertor starts working. It can takes a few minutes! Please, wait!", "Attention!");
 
             var parser = ServiceLocator.Current.GetInstance<IWebPageParser>();
 
@@ -48,6 +49,20 @@ namespace WebCVCollector.Forms
         {
             var searchWind = new SearchWindow();
             searchWind.ShowDialog();
+        }
+
+        private async void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            await Task.Run(() =>
+            {
+                using (var cont = new CVDbContext())
+                {
+                    cont.Database.Initialize(true);
+                }
+            });
+
+            initLabel.Visibility = Visibility.Hidden;
         }
     }
 }

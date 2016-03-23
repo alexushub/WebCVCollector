@@ -42,7 +42,7 @@ namespace WebPageParser.Parsers
             driver.Manage().Timeouts().SetPageLoadTimeout(new TimeSpan(0, 0, 10));
             driver.Navigate().GoToUrl(CVsUrl);
             
-            Thread.Sleep(7000);
+            Thread.Sleep(10000);
 
             var els = driver.FindElementsByCssSelector("div.ra-elements-list__item").ToList();
 
@@ -61,7 +61,7 @@ namespace WebPageParser.Parsers
                 long salary = 0;// String.Empty;
 
                 el.Click();
-                Thread.Sleep(1500); //
+                Thread.Sleep(2000); //
 
                 try
                 {

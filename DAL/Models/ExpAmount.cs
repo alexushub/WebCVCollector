@@ -15,4 +15,9 @@ namespace DAL.Models
         From3To5 = 3,
         Over5 = 4
     }
+
+    public static class DALConstants
+    {
+        public static string[] expAmountDisplay = { "Without expirience", "Less than 1 year", "1-3 years", "3-5 years", "More than 5 years" };
+    }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LinqKit;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -26,9 +27,9 @@ namespace DAL.Models
             return Context.Set<TEntity>().ToList();
         }
 
-        IEnumerable<TEntity> IRepository<TEntity>.Find(Func<TEntity, bool> predicate)
+        IEnumerable<TEntity> IRepository<TEntity>.Find(Expression<Func<TEntity, bool>> predicate)
         {
-            return Context.Set<TEntity>().Where(predicate).ToList();
+            return Context.Set<TEntity>().AsExpandable().Where(predicate).ToList();
         }
 
         void IRepository<TEntity>.Add(TEntity entity)
@@ -44,6 +45,11 @@ namespace DAL.Models
         void IRepository<TEntity>.AddRange(IEnumerable<TEntity> entities)
         {
             Context.Set<TEntity>().AddRange(entities);
+        }
+
+        public int Count()
+        {
+            return Context.Set<TEntity>().Count();
         }
     }
 }
